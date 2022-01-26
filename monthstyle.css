@@ -1,0 +1,121 @@
+/* This is the monthly style */ 
+body {
+	background: #62B7EC;
+}
+#header { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: arial;
+} 
+#content {
+	display: flex;
+	flex-direction: row;
+	flex: 50%;
+}
+.vote{
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	flex: 50%;
+	border: solid lightgray 5px;
+	border-radius: 25px;
+	margin-bottom: auto;
+	background-color: skyblue;
+}
+.voting {
+	border: solid black 2px; 
+	width: 50%; 
+	margin: auto; 
+	background-color: lightgray; 
+	padding: 25px;
+	border-radius: 25px;
+}
+.month {
+	flex: 50%;
+	align-items: center;
+}
+#hotbar {
+	grid-area: hotbar;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	
+}
+.nav-links {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+}
+span {
+	font-size: 20px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+#footer {
+	grid-area: footer;
+	height: 10vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+}
+h1 {
+	font-size: 80px;
+}
+a:hover {
+	background-color: white;
+	border-radius: 5px;
+  }
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+#para {
+	margin: auto;
+	font-size: 25px;
+	text-align: center;
+	width: 50%;
+}
+
+.nav-item a {
+	padding: 5px 10px;	
+	text-decoration: none;
+	color: black;
+	height:100%;
+	border: solid 2px black;
+}
+
+#heading {
+	text-align: center;
+	font-size: 40px;
+	font-weight:bold;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+@media screen and (max-width: 1200px)
+  {
+	  .nav-links,
+	  #hotbar, .nav-item {
+		  flex-direction: column;
+		  margin: 10px 0px;
+	  }
+  }
+  @media screen and (max-width: 1200px)
+  {
+	  #content, #des, 
+	  .buttons, #fphoto {
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+	  }
+  }

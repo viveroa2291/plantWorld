@@ -1,0 +1,160 @@
+
+body {
+	background: #62B7EC;
+}
+
+#content {
+	grid-area: content;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	flex-flow: row;
+}
+
+#header { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: arial;
+}
+#hotbar {
+
+	display: flex;
+	/* flex-wrap: wrap; */
+	justify-content: center;
+	align-items: center;
+	
+}
+.nav-links {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+}
+span {
+	font-size: 20px;
+}
+
+#footer {
+	grid-area: footer;
+	height: 10vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+}
+
+h1 {
+	font-size: 80px;
+}
+
+a:hover {
+	background-color: white;
+	border-radius: 5px;
+}
+
+#content > div {
+	font-size: 25px;
+}
+
+.nav-item a {
+	padding: 5px 10px;	
+	text-decoration: none;
+	color: black;
+	height:100%;
+	border: solid 2px black;
+}
+
+#heading {
+	text-align: center;
+	font-size: 40px;
+	font-weight:bold;
+	
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+#previous-button, #next-button{
+	font-size: 75px;
+	  z-index: 1; 
+	  margin: auto;
+	/*    top: 50%; */
+  } 
+ 
+  .buttons{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	
+	margin: auto;
+	margin-top: 0px;
+	flex: 50%;
+  }
+ 
+  #fphoto{
+	/*position: fixed; */
+	width: 500px;
+	height: 600px;
+  	object-fit: contain; 
+  }
+  
+  #fprevious-button, #fnext-button{
+	font-size: 75px;
+	  z-index: 1; 
+	  margin: auto;
+	/*    top: 50%; */
+  } 
+  #fprevious-button{
+   /* position: fixed; */
+	flex: 25%; 
+	left: 10px; 
+  }
+  #fprevious-button:hover{
+	color: white;
+	cursor: pointer;
+  }
+  #fnext-button{
+	/* position: fixed; */
+	flex: 25%;
+	right: 10px;
+	transform: scale(-1, 1); 
+  }
+  #fnext-button:hover{
+	color: white;
+	cursor: pointer;
+  }
+
+	.shopping
+	{
+		border: solid red 2px;
+		flex: 5%;
+		background: lightgreen;
+	}
+	#shopPic
+	{
+		width: 400px;
+		height: 300px;
+	}
+	#daLinks
+	{
+		text-decoration: none;
+		color: blue;
+		padding: 10px 20px;
+		border: solid black 2px;
+		margin: 0px 0px 0px 150px;
+		background-color: lightgray;
+	}
+	#daLinks:hover
+	{
+		background-color: white;
+		cursor: pointer;
+	}
+	#priceTag 
+	{
+		background-color: yellow;
+		border:solid black 2px;
+	}

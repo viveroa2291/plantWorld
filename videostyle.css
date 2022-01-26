@@ -1,0 +1,130 @@
+body {
+	background: #62B7EC;
+}
+#header { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: arial;
+}
+#content {
+	grid-area: content;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	flex-flow: column;
+}
+#hotbar {
+
+	display: flex;
+	/* flex-wrap: wrap; */
+	justify-content: center;
+	align-items: center;
+	
+}
+.nav-links {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+}
+span {
+	font-size: 20px;
+}
+#footer {
+	height: 10vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+}
+h1 {
+	font-size: 80px;
+}
+a:hover {
+	background-color: white;
+	border-radius: 5px;
+}
+.nav-item a {
+	padding: 5px 10px;	
+	text-decoration: none;
+	color: black;
+	height:100%;
+	border: solid 2px black;
+}
+#heading {
+	text-align: center;
+	font-size: 40px;
+	font-weight:bold;
+}
+#fvideo
+{
+	width: 1500px;
+	 height: 500px; 
+	 object-fit: contain;
+	 flex-shrink: 50%;
+}
+#previous-button, #next-button{
+	font-size: 75px;
+	  z-index: 1; 
+	  margin: auto;
+	/*    top: 50%; */
+  } 
+  .buttons{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	width: 75%;
+	margin: 0px 275px;
+  }
+  #fprevious-button{
+	font-size: 100px;
+	padding: 225px 0px ;
+	 flex: 25%; 
+	 left: 10px; 
+   }
+   #fprevious-button:hover{
+	 color: white;
+	 cursor: pointer;
+   }
+   #fnext-button{
+	 font-size: 100px;
+	 padding: 225px 0px ;
+	 flex: 25%;
+	 right: 10px;
+	 transform: scale(-1, 1); 
+   }
+   #fnext-button:hover{
+	 color: white;
+	 cursor: pointer;
+   }
+   @media screen and (max-width: 1200px)
+   {
+	   .nav-links,
+	   #hotbar, .nav-item {
+		   flex-direction: column;
+		   margin: 10px 0px;
+	   }
+   }
+   @media screen and (max-width: 1200px)
+   {
+	   #content, #des{
+		   display: flex;
+		   flex-direction: column;
+		   align-items: center;
+	   }
+   }
+   @media screen and (max-width: 1200px)
+   {
+	   #fvideo {
+			  height: 100%;
+			  width: 100%;
+	   }
+   }
+   @media screen and (max-width: 1200px)
+   {
+	   #fprevious-button, #fnext-button
+	   {
+			  padding: 5%;
+	   }
+   }
